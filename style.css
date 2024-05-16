@@ -1,0 +1,587 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #7cd59e, #6f450a); /* Soft gradient background */
+    /*opacity: 30%;*/
+    color: #000000;
+    transition: background 0.3s ease-in-out;
+}
+
+header {
+    background: linear-gradient(90deg, #2d9153, #6f450a); /* Soft gradient header background */
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    margin: 0;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #FFC300; /* Change the hover color to your desired theme color */
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFC300; /* Change the underline color to your desired theme color */
+    visibility: hidden;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    visibility: visible;
+}
+
+main {
+    align-items: center;
+    padding: 20px;
+}
+
+.scrollable-container {
+    display: flex;
+    overflow-x: auto;
+}
+
+.ngo-card {
+    box-sizing: border-box;
+    width: 300px;
+    margin-right: 20px;
+    padding: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.ngo-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.ngo-card:hover {
+    transform: scale(1.05);
+}
+
+.ngo-card:hover img {
+    filter: grayscale(0%);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* .see-more {
+    margin-top: 20px;
+    text-align: center; 
+}
+
+.see-more p {
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px; 
+    transition: background-color 0.3s ease-in-out;
+}
+
+.see-more p:hover {
+    background-color: #2980b9;
+} */
+
+button {
+   
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #34495E;
+    color: #fff;
+    text-align: center;
+    padding: 0em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/* Existing CSS ... */
+
+.intro-section {
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+    background: white;
+    color: #000000;
+   
+    /* padding-left: 80px; */
+    /* padding-top: 40px; */
+    text-align: center;
+}
+
+.intro-content {
+    max-width: 600px;
+    /* margin: 0 auto; */
+    align-items: center;
+}
+
+ .intro-content img {
+    max-width: 100%;
+    height: auto;
+    /* margin-bottom: 20px; */
+    /* align-items: center; */
+    /* padding-left: 600px; */
+    /* margin-left: 250px; */
+} 
+
+.reviews-section {
+    background-color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.review {
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.review img {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 100px; /* Adjust the size as needed */
+    height: 100px;
+}
+
+.review p {
+    margin-bottom: 10px;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.review h3 {
+    color: #3498db;
+}
+
+.reviewer {
+    font-style: italic;
+    color: #7f8c8d;
+}
+/* Existing CSS ... */
+
+.search-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    display: flex;
+}
+
+.search-input input {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.search-input button {
+    padding: 10px;
+    background-color: #2e2d2d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-input button:hover {
+    background-color: #5d6e79;
+}
+
+.state-dropdown label {
+    margin-right: 10px;
+}
+
+.state-dropdown select {
+    padding: 10px;
+}
+
+/* Existing CSS ... */
+/* Existing CSS ... */
+
+.logo-container {
+    border-radius: 0%;
+    
+    overflow: hidden;
+    width: 400px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    margin-right: 10px;
+    /* align-items: center; */
+    /* text-align: center; */
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* align-items:; */
+    /* text-align: center; */
+    margin-right: 124px;
+}
+
+/* Existing CSS ... */
+/* .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    border-radius: 0%;
+    overflow: hidden;
+    width: 200px;
+    height: 60px;
+} */
+
+/* Existing CSS ... */
+
+/* Existing CSS ... */
+/* Existing CSS ... */
+
+.focus-areas h2 {
+    font-size: 26px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+    color: #ffffff; /* Set a specific color */
+}
+
+.focus-areas {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden; /* Ensure the frame cuts off overflowing shadows */
+}
+
+.focus-area {
+    flex: 1;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+    text-align: center;
+    position: relative;
+}
+
+.focus-area img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px; /* Add rounded corners to the images */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the images */
+}
+
+.focus-area p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Text color for better visibility */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-weight: bold;
+    text-decoration: underline;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better text visibility */
+    padding: 10px;
+    border-radius: 8px;
+    opacity: 0; /* Hide by default */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.focus-area:hover p {
+    opacity: 1; /* Show the text on hover */
+}
+
+/* Add the following animation styles */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the animation to each focus area */
+#education {
+    animation: fadeIn 1s ease-in-out 0.5s forwards;
+}
+
+#healthcare {
+    animation: fadeIn 1s ease-in-out 1s forwards;
+}
+
+#disaster-relief {
+    animation: fadeIn 1s ease-in-out 1.5s forwards;
+}
+
+/* Ensure frame visibility */
+body {
+    background-color: #f5f5f5; /* Light gray background for better frame visibility */
+}
+
+/* Existing CSS ... */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+/* Set the font family for focus areas */
+h2{
+    padding: 20px;
+    font-family: 'Poppins', sans-serif; /* Use the imported font family or your preferred choice */
+    /* ... (rest of the existing styles) */
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Existing CSS ... */
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.login-signup-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .login-signup-container {
+        flex-direction: column;
+    }
+
+    .form-container {
+        align-items: center;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Existing CSS ... */
+
+.contact-us {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.contact-us h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-us p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Add animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-us,
+.contact-us form {
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Existing CSS ... */
+
