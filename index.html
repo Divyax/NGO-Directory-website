@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>NGOConnect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>NGOConnect</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">Advertise</a></li>
+                    <li><a href="#" class="nav-link">Free Listing</a></li>
+                    <li><a href="login.html" class="nav-link">Login</a></li>
+                    <li><a href="signup.html" class="nav-link">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="intro-section">
+        <div class="intro-content">
+            <div class="logo-container">
+                <img src="Screenshot 2023-12-05 235838.png" alt="NGOConnect Logo">
+            </div>
+            <!-- <p>Connecting volunteers with NGOs to make a positive impact in the community. Join us in making a difference!</p> -->
+        </div>
+    </div>
+
+    
+
+    <!-- <div class="gallery-container">
+        <button onclick="prevSlide()">Previous</button>
+        <img id="galleryImage" src="gallery1.jpg" alt="Gallery Image 1">
+        <button onclick="nextSlide()">Next</button>
+    </div> -->
+
+    <main>
+        <div class="search-options">
+            <div class="search-input">
+                <input type="text" id="search" placeholder="Search NGOs...">
+                <button onclick="searchNgo()">Search</button>
+            </div>
+            <div class="state-dropdown">
+                <label for="state">Select District:</label>
+                <select id="state">
+                    <option value="all">All District</option>
+                    <option value="state1">North</option>
+                    <option value="state2">North-East</option>
+                    <option value="state1">North-West</option>
+                    <option value="state2">West</option>
+                    <option value="state1">South</option>
+                    <option value="state2">South-East</option>
+                    <option value="state1">South-West</option>
+                    <option value="state2">East</option>
+                    <option value="state2">Central</option>
+                    <!-- Add more states as needed -->
+                </select>
+            </div>
+        </div>
+
+        
+    <div class="focus-areas">
+        <h2>Our Focus Areas</h2>
+        <div class="focus-area" id="education">
+            <img src="education.jpg" alt="Education Icon">
+            <p>Education</p>
+        </div>
+        <div class="focus-area" id="healthcare">
+            <img src="heal.jpg" alt="Healthcare Icon">
+            <p>Healthcare</p>
+        </div>
+        <div class="focus-area" id="disaster-relief">
+            <img src="disas.jpg" alt="Disaster Relief Icon">
+            <p>Disaster Relief</p>
+        </div>
+    </div>
+
+
+        <div class="scrollable-container">
+            <div class="ngo-card">
+                    <img src="ngo5.jpeg" alt="NGO 1 Image">
+                    <h2>Asha</h2>
+                    <p>Description of NGO 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button onclick="volunteer()">Volunteer</button>
+                    <button onclick="donate()">Donate</button>
+                </div>
+
+                <div class="ngo-card">
+                    <img src="ngo2.jpg" alt="NGO 1 Image">
+                    <h2>Paathshala</h2>
+                    <p>Description of NGO 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button onclick="volunteer()">Volunteer</button>
+                    <button onclick="donate()">Donate</button>
+                </div>
+
+                <div class="ngo-card">
+                    <img src="ngo3.jpg" alt="NGO 1 Image">
+                    <h2>Kilkari Trust</h2>
+                    <p>Description of NGO 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button onclick="volunteer()">Volunteer</button>
+                    <button onclick="donate()">Donate</button>
+                </div>
+
+                <div class="ngo-card">
+                    <img src="ngo4.jpg" alt="NGO 1 Image">
+                    <h2>Sapne</h2>
+                    <p>Description of NGO 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button onclick="volunteer()">Volunteer</button>
+                    <button onclick="donate()">Donate</button>
+                </div>
+
+                <div class="ngo-card">
+                    <img src="ngo11.jpg" alt="NGO 1 Image">
+                    <h2>Bhumi Foundation</h2>
+                    <p>Description of NGO 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button onclick="volunteer()">Volunteer</button>
+                    <button onclick="donate()">Donate</button>
+                </div>
+            </div>
+
+            <!-- Add more NGO cards as needed -->
+
+        <!-- </div>
+        <div class="see-more">
+            <p>See More</p>
+        </div> -->
+
+        
+        
+
+               
+
+                    
+    </main>
+    <main>
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <div class="review-header">
+                <img src="rev1.png" alt="Reviewer 1">
+                <div>
+                    <h3>Kilkari NGO</h3>
+                    <p class="reviewer">- Jiya Sen</p>
+                </div>
+            </div>
+            <p>"Kilkari NGO is doing great work, helping with education, healthcare, and supporting women. They make a real difference in people's lives."</p>
+        </div>
+
+        <div class="reviews-section">
+            <div class="review">
+                <div class="review-header">
+                    <img src="rev2.png" alt="Reviewer 1">
+                    <div>
+                        <h3>Sapne</h3>
+                        <p class="reviewer">- Arun Verma</p>
+                    </div>
+                </div>
+                <p>"Sapne NGO is a catalyst for dreams, providing invaluable support to underprivileged communities."</p>
+            </div>
+        </main>
+          
+    <div class="contact-us">
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you. Reach out to us for any inquiries or suggestions!</p>
+
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" placeholder="Type your message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 NGOConnect | Designed by Divya Jain</p>
+    </footer>
+
+  
+
+    <script src="script.js"></script>
+</body>
+</html>
